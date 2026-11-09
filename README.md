@@ -10,9 +10,9 @@
 
 | Hạng mục | Lựa chọn |
 |---|---|
-| Màn hình chính (Task 1) | |
-| Màn hình phụ (Task 1) | |
-| Luồng usability (Task 2) | |
+| Màn hình chính (Task 1) | A-05 Admin: Quản lý mã giảm giá (CRUD) (FR-17) |
+| Màn hình phụ (Task 1) | A-02 Dashboard + sidebar (FR-13), A-03 Quản lý danh mục (FR-14) |
+| Luồng usability (Task 2) | FL-10 Mobile: Đăng ký → Đăng nhập → Cập nhật hồ sơ (FR-01, FR-02, FR-04) |
 | Nền tảng (Task 3) | |
 
 ## 2. Test Summary
