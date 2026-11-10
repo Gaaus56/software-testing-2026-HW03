@@ -19,13 +19,13 @@
 
 | Chỉ số | Giá trị |
 |---|---|
-| Số màn hình đã kiểm thử | |
+| Số màn hình đã kiểm thử | 3 (A-05 chính; A-02, A-03 phụ) |
 | Số luồng đã kiểm thử | |
-| Số mục checklist: thiết kế | |
-| Số mục checklist: đã chạy | |
-| Số mục checklist: Passed | |
-| Số mục checklist: Failed | |
-| Số bug | |
+| Số mục checklist: thiết kế | 72 (IA-01: 23, IA-02: 22, IA-03: 11, IA-04: 16) |
+| Số mục checklist: đã chạy | 72 (Chrome 157, Windows 11) |
+| Số mục checklist: Passed | 24 |
+| Số mục checklist: Failed | 48 |
+| Số bug | Task 1: 36 (High 4, Medium 19, Low 13), chi tiết [task1-gui-checklist/bug-report.md](task1-gui-checklist/bug-report.md) |
 | Số người tham gia usability | |
 | Điểm SUS / UEQ-S trung bình | |
 | Số nền tảng cross-platform | |
