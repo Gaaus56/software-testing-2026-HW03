@@ -98,7 +98,7 @@
 
 ### BUG-04 · Sidebar không dùng được bằng bàn phím và không có ngữ nghĩa điều hướng
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Sidebar không dùng được bằng bàn phím và không có ngữ nghĩa điều hướng`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Sidebar không dùng được bằng bàn phím và không có ngữ nghĩa điều hướng`
 - **Label:** `bug`, `severity: high`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`
 - **Mục checklist:** CL-48, CL-49
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -114,7 +114,7 @@
 
 ### BUG-05 · Xóa mã giảm giá và xóa danh mục không có hộp thoại xác nhận
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Xóa mã giảm giá và xóa danh mục không có hộp thoại xác nhận`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Xóa mã giảm giá và xóa danh mục không có hộp thoại xác nhận`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-59, CL-60
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -173,7 +173,7 @@
 
 ### BUG-09 · Nhấp đúp nút gửi tạo danh mục trùng / báo lỗi giả; nút không có trạng thái đang xử lý
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Nhấp đúp nút gửi tạo danh mục trùng / báo lỗi giả; nút không có trạng thái đang xử lý`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Nhấp đúp nút gửi tạo danh mục trùng / báo lỗi giả; nút không có trạng thái đang xử lý`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`, `ia: IA-04`
 - **Mục checklist:** CL-44, CL-65
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -203,7 +203,7 @@
 
 ### BUG-11 · Thông báo lỗi hiển thị bằng alert() bật lên, không nằm phía trên nút submit
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Thông báo lỗi hiển thị bằng alert() bật lên, không nằm phía trên nút submit`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Thông báo lỗi hiển thị bằng alert() bật lên, không nằm phía trên nút submit`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-41
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -217,7 +217,7 @@
 
 ### BUG-12 · Tải lại trang (F5) và nút Back làm mất vị trí màn hình
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Tải lại trang (F5) và nút Back làm mất vị trí màn hình`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Tải lại trang (F5) và nút Back làm mất vị trí màn hình`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`
 - **Mục checklist:** CL-52, CL-53
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -231,7 +231,7 @@
 
 ### BUG-13 · Tạo mã / thêm danh mục thành công không có thông báo xác nhận
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Tạo mã / thêm danh mục thành công không có thông báo xác nhận`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Tạo mã / thêm danh mục thành công không có thông báo xác nhận`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-57, CL-58
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -245,7 +245,7 @@
 
 ### BUG-14 · Không có trạng thái đang tải khi dữ liệu chưa về
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Không có trạng thái đang tải khi dữ liệu chưa về`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Không có trạng thái đang tải khi dữ liệu chưa về`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-64
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -259,7 +259,7 @@
 
 ### BUG-15 · Mất kết nối backend không có thông báo lỗi
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Mất kết nối backend không có thông báo lỗi`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Mất kết nối backend không có thông báo lỗi`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-67
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -273,7 +273,7 @@
 
 ### BUG-16 · Form không có nhãn: chú thích chỉ là placeholder, bị che bởi giá trị mặc định và bị cắt khi phóng to
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Form không có nhãn: chú thích chỉ là placeholder, bị che bởi giá trị mặc định và bị cắt khi phóng to`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Form không có nhãn: chú thích chỉ là placeholder, bị che bởi giá trị mặc định và bị cắt khi phóng to`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-24, CL-25, CL-18
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -287,7 +287,7 @@
 
 ### BUG-17 · Văn bản không đạt tỉ lệ tương phản 4.5:1
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Văn bản không đạt tỉ lệ tương phản 4.5:1`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Văn bản không đạt tỉ lệ tương phản 4.5:1`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-16
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -301,7 +301,7 @@
 
 ### BUG-18 · Phóng to 400% (320 CSS px) không dàn lại bố cục
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Phóng to 400% (320 CSS px) không dàn lại bố cục`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Phóng to 400% (320 CSS px) không dàn lại bố cục`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-19
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -315,7 +315,7 @@
 
 ### BUG-19 · Mục sidebar đang chọn chỉ được phân biệt bằng màu chữ
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Mục sidebar đang chọn chỉ được phân biệt bằng màu chữ`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Mục sidebar đang chọn chỉ được phân biệt bằng màu chữ`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`, `ia: IA-01`
 - **Mục checklist:** CL-47
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -329,7 +329,7 @@
 
 ### BUG-20 · Các nút Xóa cùng tên truy cập "Xóa", trình đọc màn hình không biết xóa mục nào
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Các nút Xóa cùng tên truy cập "Xóa", trình đọc màn hình không biết xóa mục nào`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Các nút Xóa cùng tên truy cập "Xóa", trình đọc màn hình không biết xóa mục nào`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-23
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -371,7 +371,7 @@
 
 ### BUG-23 · Trang khai báo lang="en" cho nội dung tiếng Việt
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Trang khai báo lang="en" cho nội dung tiếng Việt`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Trang khai báo lang="en" cho nội dung tiếng Việt`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-10
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -385,7 +385,7 @@
 
 ### BUG-24 · Nút Tạo mã, Thêm mới, Xóa và mục Đăng xuất không đổi màu khi rê chuột
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Nút Tạo mã, Thêm mới, Xóa và mục Đăng xuất không đổi màu khi rê chuột`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Nút Tạo mã, Thêm mới, Xóa và mục Đăng xuất không đổi màu khi rê chuột`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`, `ia: IA-03`
 - **Mục checklist:** CL-72, CL-55
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -399,7 +399,7 @@
 
 ### BUG-25 · Trường bắt buộc không có dấu *
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Trường bắt buộc không có dấu *`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Trường bắt buộc không có dấu *`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-26
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -428,7 +428,7 @@
 
 ### BUG-27 · Thẻ h1 duy nhất là logo "EShop Admin", không mô tả màn hình
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Thẻ h1 duy nhất là logo "EShop Admin", không mô tả màn hình`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Thẻ h1 duy nhất là logo "EShop Admin", không mô tả màn hình`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-08
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -442,7 +442,7 @@
 
 ### BUG-28 · Tiêu đề tab trình duyệt luôn là "frontend-admin"
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Tiêu đề tab trình duyệt luôn là "frontend-admin"`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Tiêu đề tab trình duyệt luôn là "frontend-admin"`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-09
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -470,7 +470,7 @@
 
 ### BUG-30 · Định dạng số tiền thay đổi theo ngôn ngữ của trình duyệt
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-05][Chrome] Định dạng số tiền thay đổi theo ngôn ngữ của trình duyệt`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-05][Chrome] Định dạng số tiền thay đổi theo ngôn ngữ của trình duyệt`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-06
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -498,7 +498,7 @@
 
 ### BUG-32 · Viết hoa không nhất quán giữa tiêu đề, menu và cột bảng
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Viết hoa không nhất quán giữa tiêu đề, menu và cột bảng`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Viết hoa không nhất quán giữa tiêu đề, menu và cột bảng`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-15
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -525,7 +525,7 @@
 
 ### BUG-34 · Mục "Đăng xuất" không tách khỏi các mục điều hướng (mt-8 bị ghi đè)
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Mục "Đăng xuất" không tách khỏi các mục điều hướng (mt-8 bị ghi đè)`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Mục "Đăng xuất" không tách khỏi các mục điều hướng (mt-8 bị ghi đè)`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`
 - **Mục checklist:** CL-51
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -539,7 +539,7 @@
 
 ### BUG-35 · Token hết hạn/không hợp lệ bị đưa về trang đăng nhập không báo lý do
 
-- **Tiêu đề issue:** `[23120017][T1][A-02/A-03/A-05][Chrome] Token hết hạn/không hợp lệ bị đưa về trang đăng nhập không báo lý do`
+- **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Token hết hạn/không hợp lệ bị đưa về trang đăng nhập không báo lý do`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-68
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
@@ -553,7 +553,7 @@
 
 ### BUG-36 · Bảng mã giảm giá và bảng danh mục khi trống không có empty state
 
-- **Tiêu đề issue:** `[23120017][T1][A-03/A-05][Chrome] Bảng mã giảm giá và bảng danh mục khi trống không có empty state`
+- **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Bảng mã giảm giá và bảng danh mục khi trống không có empty state`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-66
 - **Trình duyệt / OS:** Chrome 157.0.8103.39, Windows 11 Home, 1366×768
