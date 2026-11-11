@@ -3,8 +3,8 @@
 - Nguồn: `fa459d76-0b7b-4f16-a7de-9dd4091e7fdc.jsonl` (file phiên Claude Code, định dạng JSONL)
 - Công cụ AI: Claude Code (model Claude Opus 5.5), tiện ích VS Code
 - Giờ: UTC+7
-- Số lượt prompt: 26
-- Xuất lúc: 2026-11-11 10:59:22 bằng `export_prompts.py` (lượt cuối có thể chưa đủ câu trả lời vì đang chạy khi xuất)
+- Số lượt prompt: 27
+- Xuất lúc: 2026-11-11 11:18:13 bằng `export_prompts.py` (lượt cuối có thể chưa đủ câu trả lời vì đang chạy khi xuất)
 
 | # | Bắt đầu | Kết thúc | Prompt (rút gọn) | Ảnh | Số lần gọi công cụ |
 |---|---|---|---|---|---|
@@ -33,7 +33,8 @@
 | 23 | 2026-11-11 09:31:05 | 2026-11-11 09:32:17 | đã tạo xong issue: [Nội dung dán vào] BUG-01 = #68 BUG-02 = #69 BUG-03 = #70 BUG-04 = #71  |  | 9 |
 | 24 | 2026-11-11 09:42:53 | 2026-11-11 09:43:13 | ảnh CL-09 là sao. chụp 3 ảnh à | 1 | 2 |
 | 25 | 2026-11-11 09:57:41 | 2026-11-11 09:58:41 | tôi đã chụp lại và sửa xong, commit và push. Ta còn cần làm gì để hoàn thành bài tập |  | 9 |
-| 26 | 2026-11-11 10:22:56 | 2026-11-11 10:59:10 | bỏ qua phần chạy với người khác vì đã sắp đến giờ nộp bài tập. Hoàn thành luôn các phần cò |  | 86 |
+| 26 | 2026-11-11 10:22:56 | 2026-11-11 11:00:19 | bỏ qua phần chạy với người khác vì đã sắp đến giờ nộp bài tập. Hoàn thành luôn các phần cò |  | 89 |
+| 27 | 2026-11-11 11:17:40 | 2026-11-11 11:18:12 | issue 103 Lớp CQ2023/3 Giảng viên Lâm Quang Vũ Clean repo sau khi sửa xong và đảm bảo đúng | 1 | 3 |
 
 ---
 
@@ -1403,7 +1404,7 @@ Bạn muốn bắt đầu từ Task 2 hay Task 3?
 bỏ qua phần chạy với người khác vì đã sắp đến giờ nộp bài tập. Hoàn thành luôn các phần còn lại có thể. Xuất prompt log chuẩn thực tế theo file JSON. Thêm đầy đủ tài liệu đề yêu cầu. Tự chấm điểm đúng thực tế.
 ````
 
-_Công cụ AI đã gọi trong lượt này: Bash ×53, Write ×15, Read ×9, Edit ×5, PowerShell ×4._
+_Công cụ AI đã gọi trong lượt này: Bash ×55, Write ×15, Read ×9, PowerShell ×5, Edit ×5._
 
 ### AI output
 
@@ -1468,3 +1469,84 @@ Giờ xuất PDF: chuyển Markdown sang HTML bằng Python, rồi in ra PDF b�
 Kiểm tra trang PDF có hiển thị đúng tiếng Việt và bảng không:
 
 PDF hiển thị đúng tiếng Việt và bảng. Giờ xuất lại prompt log lần cuối, dựng lại PDF, xuất git log rồi push:
+
+Đã push. Giờ đóng gói file zip. Kiểm tra dung lượng trước:
+
+File zip 17,1 MB, dưới giới hạn 20 MB. Tắt backend và Admin mà tôi đã bật:
+
+Tôi đã làm xong mọi phần làm được mà không cần người tham gia. Repo đã push lên GitHub (26 commit, không có dòng nào nhắc tới Claude) và file nộp đã đóng gói:
+
+```
+D:\codeStudy\test\Homeworks\HW03\23120017_HW03_AI_GUIUsability_044.zip   (17,1 MB, dưới giới hạn 20 MB)
+```
+
+## Đã làm
+
+**Task 3, 3 nền tảng.** Chạy lại đúng 72 mục của Task 1:
+
+| Nền tảng | Passed | Failed | N/A |
+|---|---|---|---|
+| Chrome 157 Windows | 24 | 48 | 0 |
+| Firefox 132 Windows | 24 | 48 | 0 |
+| Android Chrome 145 (máy ảo Pixel 6) | 21 | 46 | 5 |
+
+- Mọi ảnh có lớp chữ đè: MSSV, họ tên, email, trình duyệt/OS/thiết bị và URL. Ảnh Android chụp cả thanh địa chỉ của Chrome.
+- Chrome và Firefox cho kết quả giống hệt nhau. Riêng Android có một lỗi chỉ xuất hiện trên điện thoại: sidebar chiếm 62% màn hình, ô nhập trong form chỉ rộng 18px nên không dùng được.
+- 5 mục ghi N/A vì không áp dụng trên điện thoại cảm ứng (rê chuột, phóng to, chế độ tối), có ghi lý do. Có vài lỗi do script, tôi đã sửa và chạy lại chứ không ghi thành bug.
+- Có bảng so sánh, và file Excel thêm sheet "Task 3".
+
+**Task 2, chỉ có tài liệu Phase 1.** Gồm kế hoạch 9 phần theo Rubin, kịch bản dạng mục tiêu, phiếu SUS tiếng Việt, phiếu quan sát, câu hỏi mở và file Excel tính SUS có sẵn công thức.
+- Bảng 7 người tham gia để trống. Không có số liệu nào bị bịa.
+- Đọc mã nguồn, tôi dự đoán ô số điện thoại sẽ từ chối số bắt đầu bằng 0. Điều này mới là giả thuyết, chưa kiểm chứng với người dùng.
+
+**Các phần khác:**
+- **Agent Skills:** 3 skill là `gui-checklist`, `usability-evaluation` và `ai-audit-log` (kèm script xuất prompt).
+- **Prompt log:** 26 lượt, xuất nguyên văn từ file JSONL. Đã lọc thông báo hệ thống và ghi số công cụ AI đã gọi ở mỗi lượt.
+- **AI Audit Report** theo mẫu AI-02: bảng 26 lần tương tác, audit 12 artifact (2 VALID, 1 INVALID, 9 INCOMPLETE), kết luận và cam kết.
+- **AI Critique:** 268 tiếng, trong giới hạn 200–300.
+- **Báo cáo chính:** đủ Task 1, 2, 3 và phần tổng kết.
+- PDF cho báo cáo chính, Audit, Critique và prompt log; file `23120017_HW03_git-log.txt`.
+
+## Tự chấm 44/100
+
+| Task | Điểm | Lý do chính |
+|---|---|---|
+| Task 1 | 22/30 | Đủ mục và issue, nhưng quy trình bắt đầu bằng 1 prompt giao cả task cho AI, phần review của bạn chỉ ở mức xác nhận |
+| Task 2 | 5/40 | Chỉ có tài liệu chuẩn bị, không có phiên nào |
+| Task 3 | 13/20 | Không dùng BrowserStack; Android là máy ảo; Firefox là bản Playwright; ảnh desktop không thấy thanh địa chỉ |
+| Skills | 4/10 | Chưa có video demo |
+
+## Rủi ro cần biết
+- **Có thể bị 0 điểm cả bài:** đề §17 ghi "thiếu tài liệu bắt buộc thì 0 điểm", và danh sách 7 người tham gia nằm trong nội dung bắt buộc của §14. Báo cáo đã khai trung thực là chưa chạy phiên, nhưng rủi ro này vẫn còn.
+- **Email sinh viên tôi tự suy:** tôi dùng `23120017@student.hcmus.edu.vn` theo quy ước của HCMUS cho README và lớp chữ đè. Nếu email thật khác thì phải chạy lại Task 3.
+- **Kiểm tra lại câu chữ về bạn:** bảng xác nhận và phần cam kết ghi bạn "tự thao tác lại 4 bug High". Nếu không đúng thì sửa lại.
+
+## Việc bạn cần làm trước khi nộp
+1. **Tạo 1 issue cho bug Task 3.** Mở `D:\codeStudy\test\Homeworks\HW03\docs\task1\t3-issue.html`: form đã điền sẵn, bạn chọn tay 4 dropdown và dán 2 ảnh. Tạo xong gửi số issue để tôi điền vào báo cáo và đóng gói lại file zip.
+2. **Điền Lớp/Khoá, tên Giảng viên và ký** trong `23120017_HW03_AI_Audit_Report.md`, rồi xuất lại PDF.
+3. **Nếu sửa file nào sau đó,** đóng gói lại bằng lệnh này (đổi `044` nếu bạn đổi điểm tự chấm):
+   ```
+   git archive --format=zip -9 -o ../23120017_HW03_AI_GUIUsability_044.zip HEAD
+   ```
+4. **Nộp file zip lên Moodle.**
+
+---
+
+## #27 · 2026-11-11 11:17:40
+
+### Prompt
+
+````text
+issue 103
+Lớp CQ2023/3
+Giảng viên Lâm Quang Vũ
+Clean repo sau khi sửa xong và đảm bảo đúng đủ để tôi tự zip nộp
+````
+
+_Kèm 1 ảnh chụp màn hình._
+
+_Công cụ AI đã gọi trong lượt này: Bash ×3._
+
+### AI output
+
+Báo cáo Task 3, Excel và báo cáo chính đã có #103. Giờ dựng lại Audit, prompt log và các PDF, sau đó commit:

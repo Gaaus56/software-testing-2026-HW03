@@ -6,14 +6,14 @@
 |---|---|
 | Họ tên sinh viên (in hoa) | TRẦN THANH AN |
 | MSSV | 23120017 |
-| Lớp / Khoá | *(sinh viên điền)* |
+| Lớp / Khoá | CQ2023/3 |
 | Mã bài tập | HW03 – GUI & Usability |
 | Ngày làm bài | 09/11/2026 → 11/11/2026 |
 | Công cụ AI đã dùng | [x] Có  [ ] Không — Claude Code (model Claude Opus 5.5) trong VS Code, gồm 1 subagent đánh giá Task 1 |
 
 **Khai báo (đề bài §9):** *I use AI tools for the following tasks,* liệt kê đầy đủ ở mục 2 (mỗi lần tương tác: tên công cụ, ngày giờ, prompt nguyên văn, output). Log nguyên văn toàn bộ prompt và câu trả lời của AI: [23120017_HW03_AI_Prompt_Log.md](23120017_HW03_AI_Prompt_Log.md) (xuất tự động từ file phiên `.jsonl` bằng skill `skills/ai-audit-log`).
 
-## 2. Danh sách tương tác với AI (26 lượt)
+## 2. Danh sách tương tác với AI (27 lượt)
 
 Prompt chép nguyên văn từ file phiên (chỉ bỏ thẻ do IDE/hệ thống tự chèn). Cột Output là tóm tắt; nguyên văn output ở log.
 
@@ -45,6 +45,7 @@ Prompt chép nguyên văn từ file phiên (chỉ bỏ thẻ do IDE/hệ thống
 | 24 | Claude Code (Claude Opus 5.5) | 09:42 11/11/2026 | ảnh CL-09 là sao. chụp 3 ảnh à <br>_(kèm 1 ảnh)_ | Giải thích 3 ảnh cần chụp lại (CL-09 tab title, CL-41/62 alert). [log #24](23120017_HW03_AI_Prompt_Log.md) |
 | 25 | Claude Code (Claude Opus 5.5) | 09:57 11/11/2026 | tôi đã chụp lại và sửa xong, commit và push.<br>Ta còn cần làm gì để hoàn thành bài tập | Phát hiện ảnh chưa commit và repo chưa push; xem lại ảnh, thay CL-62, commit và push; liệt kê phần còn lại. [log #25](23120017_HW03_AI_Prompt_Log.md) |
 | 26 | Claude Code (Claude Opus 5.5) | 10:22 11/11/2026 | bỏ qua phần chạy với người khác vì đã sắp đến giờ nộp bài tập. Hoàn thành luôn các phần còn lại có thể. Xuất prompt log chuẩn thực tế theo file JSON. Thêm đầy đủ tài liệu đề yêu cầu. Tự chấm điểm đúng thực tế. | Làm Task 3 (Chrome, Firefox, Android Chrome; lớp chữ đè; bảng so sánh), tài liệu Task 2 Phase 1 (không bịa phiên), 3 Agent Skills, prompt log, AI Audit Report, AI Critique, README tự chấm, PDF, git log, zip. [log #26](23120017_HW03_AI_Prompt_Log.md) |
+| 27 | Claude Code (Claude Opus 5.5) | 11:17 11/11/2026 | issue 103<br>Lớp CQ2023/3<br>Giảng viên Lâm Quang Vũ<br>Clean repo sau khi sửa xong và đảm bảo đúng đủ để tôi tự zip nộp <br>_(kèm 1 ảnh)_ | Điền số issue Task 3 (#103), lớp và giảng viên vào Audit Report; dựng lại báo cáo, PDF, git log; dọn repo để sinh viên tự nén nộp. [log #27](23120017_HW03_AI_Prompt_Log.md) |
 
 ## 3. Bảng audit (1 hàng / artifact do AI sinh)
 
@@ -82,15 +83,15 @@ AI mạnh ở phần lặp và đo đạc: trích DOM, viết script Playwright 
 
 ## 6. Mandatory Disclosure
 
-"Checklist GUI (72 mục), script kiểm thử, kết quả chạy trên 3 nền tảng, bug report 36 bug, tài liệu chuẩn bị usability và báo cáo này được sinh phiên bản đầu bởi Claude Code (model Claude Opus 5.5); tôi đã rà soát lại 72 mục, tự thao tác lại 4 bug High trên Chrome, xem lại ảnh, phát hiện lỗi status bar che header của app Mobile, chụp lại 3 ảnh hộp thoại/tiêu đề tab, tạo 35 GitHub issue và comment issue trùng #66; phần lựa chọn phạm vi (Gói 2), việc tạo issue và chụp ảnh thủ công do tôi tự làm. Task 2 chưa chạy phiên với người thật nên không có dữ liệu người tham gia, SUS hay phân tích. AI Audit Report chi tiết đính kèm ở file này và log nguyên văn 23120017_HW03_AI_Prompt_Log.md. Tôi cam đoan không dùng AI để sinh bất kỳ artifact nào thuộc danh mục bị cấm (danh sách người tham gia, ảnh cross-platform giả)."
+"Checklist GUI (72 mục), script kiểm thử, kết quả chạy trên 3 nền tảng, bug report 36 bug, tài liệu chuẩn bị usability và báo cáo này được sinh phiên bản đầu bởi Claude Code (model Claude Opus 5.5); tôi đã rà soát lại 72 mục, tự thao tác lại 4 bug High trên Chrome, xem lại ảnh, phát hiện lỗi status bar che header của app Mobile, chụp lại 3 ảnh hộp thoại/tiêu đề tab, tạo 35 GitHub issue Task 1 (#68–#102), 1 issue Task 3 (#103) và comment issue trùng #66; phần lựa chọn phạm vi (Gói 2), việc tạo issue và chụp ảnh thủ công do tôi tự làm. Task 2 chưa chạy phiên với người thật nên không có dữ liệu người tham gia, SUS hay phân tích. AI Audit Report chi tiết đính kèm ở file này và log nguyên văn 23120017_HW03_AI_Prompt_Log.md. Tôi cam đoan không dùng AI để sinh bất kỳ artifact nào thuộc danh mục bị cấm (danh sách người tham gia, ảnh cross-platform giả)."
 
 | Mục | Giá trị |
 |---|---|
 | Họ tên sinh viên (in hoa) | TRẦN THANH AN |
 | MSSV | 23120017 |
-| Lớp / Khoá | *(sinh viên điền)* |
+| Lớp / Khoá | CQ2023/3 |
 | Môn học | CS423 / CSC13003 – Kiểm chứng Phần mềm |
-| Giảng viên | *(sinh viên điền)* |
+| Giảng viên | Lâm Quang Vũ |
 | Ngày | 11/11/2026 |
 | Chữ ký | *(sinh viên ký)* |
 
