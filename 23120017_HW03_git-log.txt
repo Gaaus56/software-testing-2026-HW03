@@ -1,3 +1,6 @@
+cf45430 2026-11-11 11:18:25 +0700 [forms] Add class and lecturer to AI audit report, refresh prompt log
+25b55c0 2026-11-11 11:18:25 +0700 [T3][bugs] Report cross-platform bug #103
+d506ada 2026-11-11 10:59:24 +0700 [report] Add git commit log
 f378789 2026-11-11 10:59:24 +0700 [report] Export PDFs for main report, AI audit report, AI critique and prompt log
 b0d2c22 2026-11-11 10:58:04 +0700 [report] Update README summary and self-assessment
 fc634dc 2026-11-11 10:58:04 +0700 [forms] Fill AI-02 audit report and export prompt log
