@@ -39,7 +39,7 @@
 | Số mục checklist: đã chạy | 72 trên mỗi nền tảng (Chrome, Firefox Windows; Android Chrome có 5 mục N/A) |
 | Số mục checklist: Passed | 24 (Chrome), 24 (Firefox), 21 (Android Chrome) |
 | Số mục checklist: Failed | 48 (Chrome), 48 (Firefox), 46 (Android Chrome) |
-| Số bug | Task 1: 36 (High 4, Medium 19, Low 13): 35 issue #68 → #102 trên repo nhóm + 1 trùng (Related #66). Task 3: 1 bug chỉ có trên Android Chrome. Chi tiết [task1-gui-checklist/bug-report.md](task1-gui-checklist/bug-report.md), [task3-cross-platform/cross-platform-report.md](task3-cross-platform/cross-platform-report.md) |
+| Số bug | Task 1: 36 (High 4, Medium 19, Low 13): 35 issue #68 → #102 trên repo nhóm + 1 trùng (Related #66). Task 3: 1 bug chỉ có trên Android Chrome (issue #103). Chi tiết [task1-gui-checklist/bug-report.md](task1-gui-checklist/bug-report.md), [task3-cross-platform/cross-platform-report.md](task3-cross-platform/cross-platform-report.md) |
 | Số người tham gia usability | 0 / 7 (chưa tuyển) |
 | Điểm SUS / UEQ-S trung bình | Chưa có dữ liệu |
 | Số nền tảng cross-platform | 3 |
@@ -58,5 +58,5 @@
 Lý do tự chấm:
 - **Task 1 (22/30):** đủ 72 mục phủ 4 IA, có review, 26 mục bổ sung kèm lý do AI bỏ sót, chạy đủ, có ảnh cho mọi mục Failed, 35 issue có ảnh và label. Trừ điểm vì quy trình bắt đầu bằng một prompt giao cả task cho AI (đề §2 yêu cầu dẫn AI từng bước), danh sách "vòng 1" được soạn lại sau chứ không phải lần sinh độc lập, và phần review của sinh viên chỉ ở mức xác nhận.
 - **Task 2 (5/40):** chỉ có tài liệu Phase 1 (kế hoạch, kịch bản, SUS, phiếu quan sát, câu hỏi mở). Không có người tham gia, pilot, 7 phiên, SUS, phân tích hay bug usability. Đề §17 ghi thiếu tài liệu bắt buộc có thể bị 0 điểm.
-- **Task 3 (13/20):** đủ 3 nền tảng chạy cùng 72 mục, mọi ảnh có lớp chữ đè MSSV, họ tên, email, trình duyệt và URL, có bảng so sánh và 1 bug chỉ có trên Android. Trừ điểm vì không dùng BrowserStack/LambdaTest, Android là máy ảo chứ không phải thiết bị thật, Firefox là bản Playwright đóng gói, ảnh desktop chỉ chụp vùng trang (thông tin trình duyệt nằm trong lớp chữ đè, không thấy thanh địa chỉ).
+- **Task 3 (13/20):** đủ 3 nền tảng chạy cùng 72 mục, mọi ảnh có lớp chữ đè MSSV, họ tên, email, trình duyệt và URL, có bảng so sánh và 1 bug chỉ có trên Android (issue #103). Trừ điểm vì không dùng BrowserStack/LambdaTest, Android là máy ảo chứ không phải thiết bị thật, Firefox là bản Playwright đóng gói, ảnh desktop chỉ chụp vùng trang (thông tin trình duyệt nằm trong lớp chữ đè, không thấy thanh địa chỉ).
 - **Agent Skills (4/10):** có 3 skill mô tả đúng quy trình đã làm và 1 script xuất prompt. Chưa có video demo trên YouTube.

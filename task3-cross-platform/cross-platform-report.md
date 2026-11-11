@@ -8,7 +8,7 @@ Chạy lại **đúng 72 mục checklist của Task 1** (A-05 Mã giảm giá, A
 |---|---|---|---|---|
 | Chrome (Windows) | Google Chrome 157.0.8103.39 · Windows 11 Home · cửa sổ 1366×768 | Playwright điều khiển Google Chrome đã cài trên máy | 2026-11-11 10:31 | [chrome/screenshots/](chrome/screenshots/) (50 ảnh) |
 | Firefox (Windows) | Firefox 132.0 (Gecko, Playwright build) · Windows 11 Home · cửa sổ 1366×768 | Playwright Firefox (bản Gecko do Playwright đóng gói) | 2026-11-11 10:34 | [firefox/screenshots/](firefox/screenshots/) (50 ảnh) |
-| Android Chrome (Pixel 6) | Android Chrome 145.0.0.0 · Android 17 · Pixel 6 (Android Emulator, sdk_gphone64_x86_64) | Máy ảo Android (Android Studio Emulator, AVD Pixel_6) + Playwright Android (adb), `adb reverse` cổng 5174 và 3000 | 2026-11-11 10:44 | [android/screenshots/](android/screenshots/) (51 ảnh) |
+| Android Chrome (Pixel 6) | Android Chrome 145.0.0.0 · Android 17 · Pixel 6 (Android Emulator, sdk_gphone64_x86_64) | Máy ảo Android (Android Studio Emulator, AVD Pixel_6) + Playwright Android (adb), `adb reverse` cổng 5174 và 3000 | 2026-11-11 10:44 | [android/screenshots/](android/screenshots/) (47 ảnh) |
 
 - **Không dùng BrowserStack/LambdaTest**: đề bài cho phép thiết bị thật thay thế; ở đây dùng 2 trình duyệt thật trên Windows và máy ảo Android chạy Chrome Android thật. Không có Safari (không có máy macOS/iOS); Android Chrome thay cho Safari theo đề bài §6.
 - **Lớp chữ đè** trên mọi ảnh (góc trên bên phải): MSSV · họ tên · email sinh viên, tên trình duyệt + phiên bản + OS/thiết bị, và URL localhost đang mở. Ảnh Android chụp toàn màn hình thiết bị nên thấy cả thanh địa chỉ Chrome `localhost:5174`.
@@ -50,7 +50,7 @@ Ngoài ra, trên Android, 2 mục CL-48 và CL-59 lần chạy đầu bị lỗi
 
 | Bug | Severity | Nền tảng | Tiêu đề issue | Mục | Issue # |
 |---|---|---|---|---|---|
-| T3-BUG-01 | High | Android Chrome | `[23120017][T3][A-02, A-03, A-05][Android Chrome] Admin không có bố cục cho điện thoại: sidebar chiếm 62% màn hình, ô nhập form chỉ rộng 18px` | CL-12, CL-17 | (chờ tạo) |
+| T3-BUG-01 | High | Android Chrome | `[23120017][T3][A-02, A-03, A-05][Android Chrome] Admin không có bố cục cho điện thoại: sidebar chiếm 62% màn hình, ô nhập form chỉ rộng 18px` | CL-12, CL-17 | [#103](https://github.com/angquoc/software-testing-2026-HW03-group/issues/103) |
 
 - **Các bước:** Trên điện thoại Android (Pixel 6, Chrome 145) mở `http://localhost:5174`, đăng nhập admin, chọn Mã Giảm Giá.
 - **Mong đợi:** FR-21/IA-01 hiển thị đúng ở các kích thước màn hình; form dùng được (ô nhập đủ rộng để đọc giá trị), sidebar thu gọn thành menu.
