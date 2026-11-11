@@ -1,7 +1,7 @@
 # Task 1: Bug report
 
 - Nguồn: 48 mục Failed ở [báo cáo chính, mục 1.6](../23120017_HW03_Report.md), gom thành **36 bug** (các mục cùng nguyên nhân, cùng màn hình gộp chung 1 bug)
-- Nơi báo: GitHub Issues của repo nhóm `angquoc/software-testing-2026-HW03-group`, dùng template "Bug report"; mỗi bug = 1 issue, kèm ảnh trong thư mục [screenshots/](screenshots/)
+- Nơi báo: GitHub Issues của repo nhóm `angquoc/software-testing-2026-HW03-group`, dùng template "Bug report", kèm ảnh trong thư mục [screenshots/](screenshots/). Đã tạo **35 issue** (#68 → #102), tự gán cho 23120017. BUG-06: Trùng issue #66 của 23120061 (FL-05, cùng màn A-03): không tạo issue mới, đã comment bổ sung CL-28, trường hợp tên chỉ có khoảng trắng và ảnh (README nhóm mục 4.1)
 - Môi trường chung: Google Chrome 157.0.8103.39, Windows 11, ngôn ngữ vi-VN, cửa sổ 1366×768; EShop commit `85af3ba`
 - Severity theo thang của nhóm (README repo nhóm mục 4.3), tính bằng mức nghiêm trọng cao nhất trong các mục checklist của bug (bảng quy đổi ở sheet Thông tin của file Excel). Label chung cho mọi issue: `bug`, `platform: admin`, `task: T1 checklist`
 
@@ -9,47 +9,48 @@
 
 | Bug | Severity | Màn hình | Tiêu đề | Mục checklist | IA | Issue # |
 |---|---|---|---|---|---|---|
-| BUG-01 | High | A-02 | Dashboard: Tổng doanh thu bị nhân đôi so với tổng tiền các đơn đã giao | CL-69 | IA-04 | |
-| BUG-02 | High | A-05 | Form Tạo mã giảm giá: Các ô số không kiểm tra miền giá trị (âm, 0, phần trăm > 100, đơn tối thiểu âm) | CL-32, CL-33, CL-34, CL-35 | IA-02 | |
-| BUG-03 | High | A-03 | Xóa danh mục đang có sản phẩm không cảnh báo, sản phẩm bị mồ côi | CL-61 | IA-04 | |
-| BUG-04 | High | A-02/A-03/A-05 | Sidebar không dùng được bằng bàn phím và không có ngữ nghĩa điều hướng | CL-48, CL-49 | IA-03 | |
-| BUG-05 | Medium | A-03/A-05 | Xóa mã giảm giá và xóa danh mục không có hộp thoại xác nhận | CL-59, CL-60 | IA-04 | |
-| BUG-06 | Medium | A-03 | Thêm được danh mục không có tên (để trống hoặc chỉ khoảng trắng) | CL-28 | IA-02 | |
-| BUG-07 | Medium | A-05 | Form Tạo mã giảm giá: Tạo được mã khi bỏ trống Đơn tối thiểu và Số lần dùng tối đa | CL-27 | IA-02 | |
-| BUG-08 | Medium | A-05 | Form Tạo mã giảm giá: Tạo được mã chỉ gồm khoảng trắng | CL-29 | IA-02 | |
-| BUG-09 | Medium | A-03/A-05 | Nhấp đúp nút gửi tạo danh mục trùng / báo lỗi giả; nút không có trạng thái đang xử lý | CL-44, CL-65 | IA-02, IA-04 | |
-| BUG-10 | Medium | A-05 | Tạo mã trùng hiện lỗi SQLite thô bằng tiếng Anh | CL-62 | IA-04, IA-01 | |
-| BUG-11 | Medium | A-03/A-05 | Thông báo lỗi hiển thị bằng alert() bật lên, không nằm phía trên nút submit | CL-41 | IA-02 | |
-| BUG-12 | Medium | A-02/A-03/A-05 | Tải lại trang (F5) và nút Back làm mất vị trí màn hình | CL-52, CL-53 | IA-03 | |
-| BUG-13 | Medium | A-03/A-05 | Tạo mã / thêm danh mục thành công không có thông báo xác nhận | CL-57, CL-58 | IA-04 | |
-| BUG-14 | Medium | A-02/A-03/A-05 | Không có trạng thái đang tải khi dữ liệu chưa về | CL-64 | IA-04 | |
-| BUG-15 | Medium | A-02/A-03/A-05 | Mất kết nối backend không có thông báo lỗi | CL-67 | IA-04 | |
-| BUG-16 | Medium | A-03/A-05 | Form không có nhãn: chú thích chỉ là placeholder, bị che bởi giá trị mặc định và bị cắt khi phóng to | CL-24, CL-25, CL-18 | IA-02 | |
-| BUG-17 | Medium | A-03/A-05 | Văn bản không đạt tỉ lệ tương phản 4.5:1 | CL-16 | IA-01 | |
-| BUG-18 | Medium | A-02/A-03/A-05 | Phóng to 400% (320 CSS px) không dàn lại bố cục | CL-19 | IA-01 | |
-| BUG-19 | Medium | A-02/A-03/A-05 | Mục sidebar đang chọn chỉ được phân biệt bằng màu chữ | CL-47 | IA-03, IA-01 | |
-| BUG-20 | Medium | A-03/A-05 | Các nút Xóa cùng tên truy cập "Xóa", trình đọc màn hình không biết xóa mục nào | CL-23 | IA-01 | |
-| BUG-21 | Medium | A-05 | Ô Mã coupon không giới hạn độ dài; mã dài làm tràn bảng | CL-31, CL-21 | IA-02, IA-01 | |
-| BUG-22 | Medium | A-05 | Cột Hết hạn: mã đã hết hạn bị ẩn ngày hết hạn | CL-14 | IA-01 | |
-| BUG-23 | Medium | A-02/A-03/A-05 | Trang khai báo lang="en" cho nội dung tiếng Việt | CL-10 | IA-01 | |
-| BUG-24 | Low | A-02/A-03/A-05 | Nút Tạo mã, Thêm mới, Xóa và mục Đăng xuất không đổi màu khi rê chuột | CL-72, CL-55 | IA-04, IA-03 | |
-| BUG-25 | Low | A-03/A-05 | Trường bắt buộc không có dấu * | CL-26 | IA-02 | |
-| BUG-26 | Low | A-05 | Nút hành động tích cực "Tạo mã" màu cam thay vì xanh dương | CL-02 | IA-01 | |
-| BUG-27 | Low | A-02/A-03/A-05 | Thẻ h1 duy nhất là logo "EShop Admin", không mô tả màn hình | CL-08 | IA-01 | |
-| BUG-28 | Low | A-02/A-03/A-05 | Tiêu đề tab trình duyệt luôn là "frontend-admin" | CL-09 | IA-01 | |
-| BUG-29 | Low | A-02 | Dashboard còn nhãn tiếng Anh "Delivered" | CL-01 | IA-01 | |
-| BUG-30 | Low | A-02/A-05 | Định dạng số tiền thay đổi theo ngôn ngữ của trình duyệt | CL-06 | IA-01 | |
-| BUG-31 | Low | A-05 | Cột Hết hạn hiển thị ngày dạng yyyy-mm-dd, khác định dạng ô nhập dd/mm/yyyy | CL-13 | IA-01 | |
-| BUG-32 | Low | A-02/A-03/A-05 | Viết hoa không nhất quán giữa tiêu đề, menu và cột bảng | CL-15 | IA-01 | |
-| BUG-33 | Low | A-05 | Cho tạo mã có ngày hết hạn trong quá khứ mà không cảnh báo | CL-37 | IA-02 | |
-| BUG-34 | Low | A-02/A-03/A-05 | Mục "Đăng xuất" không tách khỏi các mục điều hướng (mt-8 bị ghi đè) | CL-51 | IA-03 | |
-| BUG-35 | Low | A-02/A-03/A-05 | Token hết hạn/không hợp lệ bị đưa về trang đăng nhập không báo lý do | CL-68 | IA-04 | |
-| BUG-36 | Low | A-03/A-05 | Bảng mã giảm giá và bảng danh mục khi trống không có empty state | CL-66 | IA-04 | |
+| BUG-01 | High | A-02 | Dashboard: Tổng doanh thu bị nhân đôi so với tổng tiền các đơn đã giao | CL-69 | IA-04 | [#68](https://github.com/angquoc/software-testing-2026-HW03-group/issues/68) |
+| BUG-02 | High | A-05 | Form Tạo mã giảm giá: Các ô số không kiểm tra miền giá trị (âm, 0, phần trăm > 100, đơn tối thiểu âm) | CL-32, CL-33, CL-34, CL-35 | IA-02 | [#69](https://github.com/angquoc/software-testing-2026-HW03-group/issues/69) |
+| BUG-03 | High | A-03 | Xóa danh mục đang có sản phẩm không cảnh báo, sản phẩm bị mồ côi | CL-61 | IA-04 | [#70](https://github.com/angquoc/software-testing-2026-HW03-group/issues/70) |
+| BUG-04 | High | A-02/A-03/A-05 | Sidebar không dùng được bằng bàn phím và không có ngữ nghĩa điều hướng | CL-48, CL-49 | IA-03 | [#71](https://github.com/angquoc/software-testing-2026-HW03-group/issues/71) |
+| BUG-05 | Medium | A-03/A-05 | Xóa mã giảm giá và xóa danh mục không có hộp thoại xác nhận | CL-59, CL-60 | IA-04 | [#72](https://github.com/angquoc/software-testing-2026-HW03-group/issues/72) |
+| BUG-06 | Medium | A-03 | Thêm được danh mục không có tên (để trống hoặc chỉ khoảng trắng) | CL-28 | IA-02 | [Related #66](https://github.com/angquoc/software-testing-2026-HW03-group/issues/66) |
+| BUG-07 | Medium | A-05 | Form Tạo mã giảm giá: Tạo được mã khi bỏ trống Đơn tối thiểu và Số lần dùng tối đa | CL-27 | IA-02 | [#73](https://github.com/angquoc/software-testing-2026-HW03-group/issues/73) |
+| BUG-08 | Medium | A-05 | Form Tạo mã giảm giá: Tạo được mã chỉ gồm khoảng trắng | CL-29 | IA-02 | [#74](https://github.com/angquoc/software-testing-2026-HW03-group/issues/74) |
+| BUG-09 | Medium | A-03/A-05 | Nhấp đúp nút gửi tạo danh mục trùng / báo lỗi giả; nút không có trạng thái đang xử lý | CL-44, CL-65 | IA-02, IA-04 | [#75](https://github.com/angquoc/software-testing-2026-HW03-group/issues/75) |
+| BUG-10 | Medium | A-05 | Tạo mã trùng hiện lỗi SQLite thô bằng tiếng Anh | CL-62 | IA-04, IA-01 | [#76](https://github.com/angquoc/software-testing-2026-HW03-group/issues/76) |
+| BUG-11 | Medium | A-03/A-05 | Thông báo lỗi hiển thị bằng alert() bật lên, không nằm phía trên nút submit | CL-41 | IA-02 | [#77](https://github.com/angquoc/software-testing-2026-HW03-group/issues/77) |
+| BUG-12 | Medium | A-02/A-03/A-05 | Tải lại trang (F5) và nút Back làm mất vị trí màn hình | CL-52, CL-53 | IA-03 | [#78](https://github.com/angquoc/software-testing-2026-HW03-group/issues/78) |
+| BUG-13 | Medium | A-03/A-05 | Tạo mã / thêm danh mục thành công không có thông báo xác nhận | CL-57, CL-58 | IA-04 | [#79](https://github.com/angquoc/software-testing-2026-HW03-group/issues/79) |
+| BUG-14 | Medium | A-02/A-03/A-05 | Không có trạng thái đang tải khi dữ liệu chưa về | CL-64 | IA-04 | [#80](https://github.com/angquoc/software-testing-2026-HW03-group/issues/80) |
+| BUG-15 | Medium | A-02/A-03/A-05 | Mất kết nối backend không có thông báo lỗi | CL-67 | IA-04 | [#81](https://github.com/angquoc/software-testing-2026-HW03-group/issues/81) |
+| BUG-16 | Medium | A-03/A-05 | Form không có nhãn: chú thích chỉ là placeholder, bị che bởi giá trị mặc định và bị cắt khi phóng to | CL-24, CL-25, CL-18 | IA-02 | [#82](https://github.com/angquoc/software-testing-2026-HW03-group/issues/82) |
+| BUG-17 | Medium | A-03/A-05 | Văn bản không đạt tỉ lệ tương phản 4.5:1 | CL-16 | IA-01 | [#83](https://github.com/angquoc/software-testing-2026-HW03-group/issues/83) |
+| BUG-18 | Medium | A-02/A-03/A-05 | Phóng to 400% (320 CSS px) không dàn lại bố cục | CL-19 | IA-01 | [#84](https://github.com/angquoc/software-testing-2026-HW03-group/issues/84) |
+| BUG-19 | Medium | A-02/A-03/A-05 | Mục sidebar đang chọn chỉ được phân biệt bằng màu chữ | CL-47 | IA-03, IA-01 | [#85](https://github.com/angquoc/software-testing-2026-HW03-group/issues/85) |
+| BUG-20 | Medium | A-03/A-05 | Các nút Xóa cùng tên truy cập "Xóa", trình đọc màn hình không biết xóa mục nào | CL-23 | IA-01 | [#86](https://github.com/angquoc/software-testing-2026-HW03-group/issues/86) |
+| BUG-21 | Medium | A-05 | Ô Mã coupon không giới hạn độ dài; mã dài làm tràn bảng | CL-31, CL-21 | IA-02, IA-01 | [#87](https://github.com/angquoc/software-testing-2026-HW03-group/issues/87) |
+| BUG-22 | Medium | A-05 | Cột Hết hạn: mã đã hết hạn bị ẩn ngày hết hạn | CL-14 | IA-01 | [#88](https://github.com/angquoc/software-testing-2026-HW03-group/issues/88) |
+| BUG-23 | Medium | A-02/A-03/A-05 | Trang khai báo lang="en" cho nội dung tiếng Việt | CL-10 | IA-01 | [#89](https://github.com/angquoc/software-testing-2026-HW03-group/issues/89) |
+| BUG-24 | Low | A-02/A-03/A-05 | Nút Tạo mã, Thêm mới, Xóa và mục Đăng xuất không đổi màu khi rê chuột | CL-72, CL-55 | IA-04, IA-03 | [#90](https://github.com/angquoc/software-testing-2026-HW03-group/issues/90) |
+| BUG-25 | Low | A-03/A-05 | Trường bắt buộc không có dấu * | CL-26 | IA-02 | [#91](https://github.com/angquoc/software-testing-2026-HW03-group/issues/91) |
+| BUG-26 | Low | A-05 | Nút hành động tích cực "Tạo mã" màu cam thay vì xanh dương | CL-02 | IA-01 | [#92](https://github.com/angquoc/software-testing-2026-HW03-group/issues/92) |
+| BUG-27 | Low | A-02/A-03/A-05 | Thẻ h1 duy nhất là logo "EShop Admin", không mô tả màn hình | CL-08 | IA-01 | [#93](https://github.com/angquoc/software-testing-2026-HW03-group/issues/93) |
+| BUG-28 | Low | A-02/A-03/A-05 | Tiêu đề tab trình duyệt luôn là "frontend-admin" | CL-09 | IA-01 | [#94](https://github.com/angquoc/software-testing-2026-HW03-group/issues/94) |
+| BUG-29 | Low | A-02 | Dashboard còn nhãn tiếng Anh "Delivered" | CL-01 | IA-01 | [#95](https://github.com/angquoc/software-testing-2026-HW03-group/issues/95) |
+| BUG-30 | Low | A-02/A-05 | Định dạng số tiền thay đổi theo ngôn ngữ của trình duyệt | CL-06 | IA-01 | [#96](https://github.com/angquoc/software-testing-2026-HW03-group/issues/96) |
+| BUG-31 | Low | A-05 | Cột Hết hạn hiển thị ngày dạng yyyy-mm-dd, khác định dạng ô nhập dd/mm/yyyy | CL-13 | IA-01 | [#97](https://github.com/angquoc/software-testing-2026-HW03-group/issues/97) |
+| BUG-32 | Low | A-02/A-03/A-05 | Viết hoa không nhất quán giữa tiêu đề, menu và cột bảng | CL-15 | IA-01 | [#98](https://github.com/angquoc/software-testing-2026-HW03-group/issues/98) |
+| BUG-33 | Low | A-05 | Cho tạo mã có ngày hết hạn trong quá khứ mà không cảnh báo | CL-37 | IA-02 | [#99](https://github.com/angquoc/software-testing-2026-HW03-group/issues/99) |
+| BUG-34 | Low | A-02/A-03/A-05 | Mục "Đăng xuất" không tách khỏi các mục điều hướng (mt-8 bị ghi đè) | CL-51 | IA-03 | [#100](https://github.com/angquoc/software-testing-2026-HW03-group/issues/100) |
+| BUG-35 | Low | A-02/A-03/A-05 | Token hết hạn/không hợp lệ bị đưa về trang đăng nhập không báo lý do | CL-68 | IA-04 | [#101](https://github.com/angquoc/software-testing-2026-HW03-group/issues/101) |
+| BUG-36 | Low | A-03/A-05 | Bảng mã giảm giá và bảng danh mục khi trống không có empty state | CL-66 | IA-04 | [#102](https://github.com/angquoc/software-testing-2026-HW03-group/issues/102) |
 
-## 2. Chi tiết từng bug (nội dung để điền vào issue)
+## 2. Chi tiết từng bug (nội dung đã điền vào issue)
 
 ### BUG-01 · Dashboard: Tổng doanh thu bị nhân đôi so với tổng tiền các đơn đã giao
 
+- **Issue:** [#68](https://github.com/angquoc/software-testing-2026-HW03-group/issues/68)
 - **Tiêu đề issue:** `[23120017][T1][A-02][Chrome] Dashboard: Tổng doanh thu bị nhân đôi so với tổng tiền các đơn đã giao`
 - **Label:** `bug`, `severity: high`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-69
@@ -66,6 +67,7 @@
 
 ### BUG-02 · Form Tạo mã giảm giá: Các ô số không kiểm tra miền giá trị (âm, 0, phần trăm > 100, đơn tối thiểu âm)
 
+- **Issue:** [#69](https://github.com/angquoc/software-testing-2026-HW03-group/issues/69)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Form Tạo mã giảm giá: Các ô số không kiểm tra miền giá trị (âm, 0, phần trăm > 100, đơn tối thiểu âm)`
 - **Label:** `bug`, `severity: high`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-32, CL-33, CL-34, CL-35
@@ -83,6 +85,7 @@
 
 ### BUG-03 · Xóa danh mục đang có sản phẩm không cảnh báo, sản phẩm bị mồ côi
 
+- **Issue:** [#70](https://github.com/angquoc/software-testing-2026-HW03-group/issues/70)
 - **Tiêu đề issue:** `[23120017][T1][A-03][Chrome] Xóa danh mục đang có sản phẩm không cảnh báo, sản phẩm bị mồ côi`
 - **Label:** `bug`, `severity: high`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-61
@@ -98,6 +101,7 @@
 
 ### BUG-04 · Sidebar không dùng được bằng bàn phím và không có ngữ nghĩa điều hướng
 
+- **Issue:** [#71](https://github.com/angquoc/software-testing-2026-HW03-group/issues/71)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Sidebar không dùng được bằng bàn phím và không có ngữ nghĩa điều hướng`
 - **Label:** `bug`, `severity: high`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`
 - **Mục checklist:** CL-48, CL-49
@@ -114,6 +118,7 @@
 
 ### BUG-05 · Xóa mã giảm giá và xóa danh mục không có hộp thoại xác nhận
 
+- **Issue:** [#72](https://github.com/angquoc/software-testing-2026-HW03-group/issues/72)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Xóa mã giảm giá và xóa danh mục không có hộp thoại xác nhận`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-59, CL-60
@@ -128,6 +133,7 @@
 
 ### BUG-06 · Thêm được danh mục không có tên (để trống hoặc chỉ khoảng trắng)
 
+- **Issue:** [Related #66](https://github.com/angquoc/software-testing-2026-HW03-group/issues/66) (Trùng issue #66 của 23120061 (FL-05, cùng màn A-03): không tạo issue mới, đã comment bổ sung CL-28, trường hợp tên chỉ có khoảng trắng và ảnh)
 - **Tiêu đề issue:** `[23120017][T1][A-03][Chrome] Thêm được danh mục không có tên (để trống hoặc chỉ khoảng trắng)`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-28
@@ -143,6 +149,7 @@
 
 ### BUG-07 · Form Tạo mã giảm giá: Tạo được mã khi bỏ trống Đơn tối thiểu và Số lần dùng tối đa
 
+- **Issue:** [#73](https://github.com/angquoc/software-testing-2026-HW03-group/issues/73)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Form Tạo mã giảm giá: Tạo được mã khi bỏ trống Đơn tối thiểu và Số lần dùng tối đa`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-27
@@ -159,6 +166,7 @@
 
 ### BUG-08 · Form Tạo mã giảm giá: Tạo được mã chỉ gồm khoảng trắng
 
+- **Issue:** [#74](https://github.com/angquoc/software-testing-2026-HW03-group/issues/74)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Form Tạo mã giảm giá: Tạo được mã chỉ gồm khoảng trắng`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-29
@@ -173,6 +181,7 @@
 
 ### BUG-09 · Nhấp đúp nút gửi tạo danh mục trùng / báo lỗi giả; nút không có trạng thái đang xử lý
 
+- **Issue:** [#75](https://github.com/angquoc/software-testing-2026-HW03-group/issues/75)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Nhấp đúp nút gửi tạo danh mục trùng / báo lỗi giả; nút không có trạng thái đang xử lý`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`, `ia: IA-04`
 - **Mục checklist:** CL-44, CL-65
@@ -188,6 +197,7 @@
 
 ### BUG-10 · Tạo mã trùng hiện lỗi SQLite thô bằng tiếng Anh
 
+- **Issue:** [#76](https://github.com/angquoc/software-testing-2026-HW03-group/issues/76)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Tạo mã trùng hiện lỗi SQLite thô bằng tiếng Anh`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`, `ia: IA-01`
 - **Mục checklist:** CL-62
@@ -203,6 +213,7 @@
 
 ### BUG-11 · Thông báo lỗi hiển thị bằng alert() bật lên, không nằm phía trên nút submit
 
+- **Issue:** [#77](https://github.com/angquoc/software-testing-2026-HW03-group/issues/77)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Thông báo lỗi hiển thị bằng alert() bật lên, không nằm phía trên nút submit`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-41
@@ -217,6 +228,7 @@
 
 ### BUG-12 · Tải lại trang (F5) và nút Back làm mất vị trí màn hình
 
+- **Issue:** [#78](https://github.com/angquoc/software-testing-2026-HW03-group/issues/78)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Tải lại trang (F5) và nút Back làm mất vị trí màn hình`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`
 - **Mục checklist:** CL-52, CL-53
@@ -231,6 +243,7 @@
 
 ### BUG-13 · Tạo mã / thêm danh mục thành công không có thông báo xác nhận
 
+- **Issue:** [#79](https://github.com/angquoc/software-testing-2026-HW03-group/issues/79)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Tạo mã / thêm danh mục thành công không có thông báo xác nhận`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-57, CL-58
@@ -245,6 +258,7 @@
 
 ### BUG-14 · Không có trạng thái đang tải khi dữ liệu chưa về
 
+- **Issue:** [#80](https://github.com/angquoc/software-testing-2026-HW03-group/issues/80)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Không có trạng thái đang tải khi dữ liệu chưa về`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-64
@@ -259,6 +273,7 @@
 
 ### BUG-15 · Mất kết nối backend không có thông báo lỗi
 
+- **Issue:** [#81](https://github.com/angquoc/software-testing-2026-HW03-group/issues/81)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Mất kết nối backend không có thông báo lỗi`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-67
@@ -273,6 +288,7 @@
 
 ### BUG-16 · Form không có nhãn: chú thích chỉ là placeholder, bị che bởi giá trị mặc định và bị cắt khi phóng to
 
+- **Issue:** [#82](https://github.com/angquoc/software-testing-2026-HW03-group/issues/82)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Form không có nhãn: chú thích chỉ là placeholder, bị che bởi giá trị mặc định và bị cắt khi phóng to`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-24, CL-25, CL-18
@@ -287,6 +303,7 @@
 
 ### BUG-17 · Văn bản không đạt tỉ lệ tương phản 4.5:1
 
+- **Issue:** [#83](https://github.com/angquoc/software-testing-2026-HW03-group/issues/83)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Văn bản không đạt tỉ lệ tương phản 4.5:1`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-16
@@ -301,6 +318,7 @@
 
 ### BUG-18 · Phóng to 400% (320 CSS px) không dàn lại bố cục
 
+- **Issue:** [#84](https://github.com/angquoc/software-testing-2026-HW03-group/issues/84)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Phóng to 400% (320 CSS px) không dàn lại bố cục`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-19
@@ -315,6 +333,7 @@
 
 ### BUG-19 · Mục sidebar đang chọn chỉ được phân biệt bằng màu chữ
 
+- **Issue:** [#85](https://github.com/angquoc/software-testing-2026-HW03-group/issues/85)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Mục sidebar đang chọn chỉ được phân biệt bằng màu chữ`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`, `ia: IA-01`
 - **Mục checklist:** CL-47
@@ -329,6 +348,7 @@
 
 ### BUG-20 · Các nút Xóa cùng tên truy cập "Xóa", trình đọc màn hình không biết xóa mục nào
 
+- **Issue:** [#86](https://github.com/angquoc/software-testing-2026-HW03-group/issues/86)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Các nút Xóa cùng tên truy cập "Xóa", trình đọc màn hình không biết xóa mục nào`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-23
@@ -343,6 +363,7 @@
 
 ### BUG-21 · Ô Mã coupon không giới hạn độ dài; mã dài làm tràn bảng
 
+- **Issue:** [#87](https://github.com/angquoc/software-testing-2026-HW03-group/issues/87)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Ô Mã coupon không giới hạn độ dài; mã dài làm tràn bảng`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`, `ia: IA-01`
 - **Mục checklist:** CL-31, CL-21
@@ -357,6 +378,7 @@
 
 ### BUG-22 · Cột Hết hạn: mã đã hết hạn bị ẩn ngày hết hạn
 
+- **Issue:** [#88](https://github.com/angquoc/software-testing-2026-HW03-group/issues/88)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Cột Hết hạn: mã đã hết hạn bị ẩn ngày hết hạn`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-14
@@ -371,6 +393,7 @@
 
 ### BUG-23 · Trang khai báo lang="en" cho nội dung tiếng Việt
 
+- **Issue:** [#89](https://github.com/angquoc/software-testing-2026-HW03-group/issues/89)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Trang khai báo lang="en" cho nội dung tiếng Việt`
 - **Label:** `bug`, `severity: medium`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-10
@@ -385,6 +408,7 @@
 
 ### BUG-24 · Nút Tạo mã, Thêm mới, Xóa và mục Đăng xuất không đổi màu khi rê chuột
 
+- **Issue:** [#90](https://github.com/angquoc/software-testing-2026-HW03-group/issues/90)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Nút Tạo mã, Thêm mới, Xóa và mục Đăng xuất không đổi màu khi rê chuột`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`, `ia: IA-03`
 - **Mục checklist:** CL-72, CL-55
@@ -399,6 +423,7 @@
 
 ### BUG-25 · Trường bắt buộc không có dấu *
 
+- **Issue:** [#91](https://github.com/angquoc/software-testing-2026-HW03-group/issues/91)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Trường bắt buộc không có dấu *`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-26
@@ -414,6 +439,7 @@
 
 ### BUG-26 · Nút hành động tích cực "Tạo mã" màu cam thay vì xanh dương
 
+- **Issue:** [#92](https://github.com/angquoc/software-testing-2026-HW03-group/issues/92)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Nút hành động tích cực "Tạo mã" màu cam thay vì xanh dương`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-02
@@ -428,6 +454,7 @@
 
 ### BUG-27 · Thẻ h1 duy nhất là logo "EShop Admin", không mô tả màn hình
 
+- **Issue:** [#93](https://github.com/angquoc/software-testing-2026-HW03-group/issues/93)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Thẻ h1 duy nhất là logo "EShop Admin", không mô tả màn hình`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-08
@@ -442,6 +469,7 @@
 
 ### BUG-28 · Tiêu đề tab trình duyệt luôn là "frontend-admin"
 
+- **Issue:** [#94](https://github.com/angquoc/software-testing-2026-HW03-group/issues/94)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Tiêu đề tab trình duyệt luôn là "frontend-admin"`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-09
@@ -456,6 +484,7 @@
 
 ### BUG-29 · Dashboard còn nhãn tiếng Anh "Delivered"
 
+- **Issue:** [#95](https://github.com/angquoc/software-testing-2026-HW03-group/issues/95)
 - **Tiêu đề issue:** `[23120017][T1][A-02][Chrome] Dashboard còn nhãn tiếng Anh "Delivered"`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-01
@@ -470,6 +499,7 @@
 
 ### BUG-30 · Định dạng số tiền thay đổi theo ngôn ngữ của trình duyệt
 
+- **Issue:** [#96](https://github.com/angquoc/software-testing-2026-HW03-group/issues/96)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-05][Chrome] Định dạng số tiền thay đổi theo ngôn ngữ của trình duyệt`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-06
@@ -484,6 +514,7 @@
 
 ### BUG-31 · Cột Hết hạn hiển thị ngày dạng yyyy-mm-dd, khác định dạng ô nhập dd/mm/yyyy
 
+- **Issue:** [#97](https://github.com/angquoc/software-testing-2026-HW03-group/issues/97)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Cột Hết hạn hiển thị ngày dạng yyyy-mm-dd, khác định dạng ô nhập dd/mm/yyyy`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-13
@@ -498,6 +529,7 @@
 
 ### BUG-32 · Viết hoa không nhất quán giữa tiêu đề, menu và cột bảng
 
+- **Issue:** [#98](https://github.com/angquoc/software-testing-2026-HW03-group/issues/98)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Viết hoa không nhất quán giữa tiêu đề, menu và cột bảng`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-01`
 - **Mục checklist:** CL-15
@@ -511,6 +543,7 @@
 
 ### BUG-33 · Cho tạo mã có ngày hết hạn trong quá khứ mà không cảnh báo
 
+- **Issue:** [#99](https://github.com/angquoc/software-testing-2026-HW03-group/issues/99)
 - **Tiêu đề issue:** `[23120017][T1][A-05][Chrome] Cho tạo mã có ngày hết hạn trong quá khứ mà không cảnh báo`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-02`
 - **Mục checklist:** CL-37
@@ -525,6 +558,7 @@
 
 ### BUG-34 · Mục "Đăng xuất" không tách khỏi các mục điều hướng (mt-8 bị ghi đè)
 
+- **Issue:** [#100](https://github.com/angquoc/software-testing-2026-HW03-group/issues/100)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Mục "Đăng xuất" không tách khỏi các mục điều hướng (mt-8 bị ghi đè)`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-03`
 - **Mục checklist:** CL-51
@@ -539,6 +573,7 @@
 
 ### BUG-35 · Token hết hạn/không hợp lệ bị đưa về trang đăng nhập không báo lý do
 
+- **Issue:** [#101](https://github.com/angquoc/software-testing-2026-HW03-group/issues/101)
 - **Tiêu đề issue:** `[23120017][T1][A-02, A-03, A-05][Chrome] Token hết hạn/không hợp lệ bị đưa về trang đăng nhập không báo lý do`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-68
@@ -553,6 +588,7 @@
 
 ### BUG-36 · Bảng mã giảm giá và bảng danh mục khi trống không có empty state
 
+- **Issue:** [#102](https://github.com/angquoc/software-testing-2026-HW03-group/issues/102)
 - **Tiêu đề issue:** `[23120017][T1][A-03, A-05][Chrome] Bảng mã giảm giá và bảng danh mục khi trống không có empty state`
 - **Label:** `bug`, `severity: low`, `platform: admin`, `task: T1 checklist`, `ia: IA-04`
 - **Mục checklist:** CL-66

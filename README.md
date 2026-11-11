@@ -25,7 +25,7 @@
 | Số mục checklist: đã chạy | 72 (Chrome 157, Windows 11) |
 | Số mục checklist: Passed | 24 |
 | Số mục checklist: Failed | 48 |
-| Số bug | Task 1: 36 (High 4, Medium 19, Low 13), chi tiết [task1-gui-checklist/bug-report.md](task1-gui-checklist/bug-report.md) |
+| Số bug | Task 1: 36 (High 4, Medium 19, Low 13): 35 issue #68 → #102 trên repo nhóm + 1 trùng (Related #66). Chi tiết [task1-gui-checklist/bug-report.md](task1-gui-checklist/bug-report.md) |
 | Số người tham gia usability | |
 | Điểm SUS / UEQ-S trung bình | |
 | Số nền tảng cross-platform | |
