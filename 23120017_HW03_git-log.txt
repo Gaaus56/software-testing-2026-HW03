@@ -1,0 +1,25 @@
+f378789 2026-11-11 10:59:24 +0700 [report] Export PDFs for main report, AI audit report, AI critique and prompt log
+b0d2c22 2026-11-11 10:58:04 +0700 [report] Update README summary and self-assessment
+fc634dc 2026-11-11 10:58:04 +0700 [forms] Fill AI-02 audit report and export prompt log
+f14c8ff 2026-11-11 10:58:04 +0700 [report] Add AI critique
+4c43421 2026-11-11 10:58:04 +0700 [report] Write main report with Task 2 and Task 3 sections
+2ffafc9 2026-11-11 10:54:10 +0700 [skill] Add AI audit log export skill
+1ec8f02 2026-11-11 10:54:09 +0700 [skill] Add usability evaluation skill
+12d79da 2026-11-11 10:54:09 +0700 [skill] Add GUI checklist skill
+2b3ff6d 2026-11-11 10:52:10 +0700 [T2][participants] Add empty participant table (recruitment not done)
+2b5d788 2026-11-11 10:52:10 +0700 [T2][instruments] Prepare SUS form and probe questions
+08b6927 2026-11-11 10:52:10 +0700 [T2][scenario] Write task scenario
+5a625fe 2026-11-11 10:52:10 +0700 [T2][plan] Write usability test plan
+9934fae 2026-11-11 10:49:36 +0700 [T3][compare] Compare results across platforms
+f821ca8 2026-11-11 10:49:36 +0700 [T3][android-chrome] Execute checklist on Android Chrome (Pixel 6 emulator)
+c81a50f 2026-11-11 10:49:35 +0700 [T3][firefox] Execute checklist on Firefox Windows
+06a2d61 2026-11-11 10:49:35 +0700 [T3][chrome] Execute checklist on Chrome Windows
+8e9b121 2026-11-11 09:58:15 +0700 [T1][exec] Retake screenshots of alert dialogs and tab title, add issue list screenshots
+5f84ad8 2026-11-11 09:32:09 +0700 [T1][bugs] Link GitHub issues #68-#102 and related #66
+51e0d9c 2026-11-11 08:30:24 +0700 [T1][review] Record student review and align issue titles with group format
+a430f93 2026-11-11 02:20:19 +0700 [report] Update README summary for Task 1
+c3d6550 2026-11-11 02:20:19 +0700 [T1][bugs] Add bug report for 36 GUI bugs (GitHub issues pending)
+462c715 2026-11-11 02:20:19 +0700 [T1][exec] Add Task 1 report and screenshots of failed checklist items
+a423e27 2026-11-11 02:20:19 +0700 [T1][excel] Add GUI checklist workbook with 72 items executed on Chrome
+99c4a69 2026-11-09 07:49:59 +0000 [setup] Add scope selection
+ec68017 2026-11-09 14:26:56 +0700 [setup] Init repo with README, summary and self-assessment table
