@@ -4,7 +4,7 @@
 - Công cụ AI: Claude Code (model Claude Opus 5.5), tiện ích VS Code
 - Giờ: UTC+7
 - Số lượt prompt: 26
-- Xuất lúc: 2026-11-11 10:56:21 bằng `export_prompts.py` (lượt cuối có thể chưa đủ câu trả lời vì đang chạy khi xuất)
+- Xuất lúc: 2026-11-11 10:59:22 bằng `export_prompts.py` (lượt cuối có thể chưa đủ câu trả lời vì đang chạy khi xuất)
 
 | # | Bắt đầu | Kết thúc | Prompt (rút gọn) | Ảnh | Số lần gọi công cụ |
 |---|---|---|---|---|---|
@@ -33,7 +33,7 @@
 | 23 | 2026-11-11 09:31:05 | 2026-11-11 09:32:17 | đã tạo xong issue: [Nội dung dán vào] BUG-01 = #68 BUG-02 = #69 BUG-03 = #70 BUG-04 = #71  |  | 9 |
 | 24 | 2026-11-11 09:42:53 | 2026-11-11 09:43:13 | ảnh CL-09 là sao. chụp 3 ảnh à | 1 | 2 |
 | 25 | 2026-11-11 09:57:41 | 2026-11-11 09:58:41 | tôi đã chụp lại và sửa xong, commit và push. Ta còn cần làm gì để hoàn thành bài tập |  | 9 |
-| 26 | 2026-11-11 10:22:56 | 2026-11-11 10:56:10 | bỏ qua phần chạy với người khác vì đã sắp đến giờ nộp bài tập. Hoàn thành luôn các phần cò |  | 66 |
+| 26 | 2026-11-11 10:22:56 | 2026-11-11 10:59:10 | bỏ qua phần chạy với người khác vì đã sắp đến giờ nộp bài tập. Hoàn thành luôn các phần cò |  | 86 |
 
 ---
 
@@ -1403,7 +1403,7 @@ Bạn muốn bắt đầu từ Task 2 hay Task 3?
 bỏ qua phần chạy với người khác vì đã sắp đến giờ nộp bài tập. Hoàn thành luôn các phần còn lại có thể. Xuất prompt log chuẩn thực tế theo file JSON. Thêm đầy đủ tài liệu đề yêu cầu. Tự chấm điểm đúng thực tế.
 ````
 
-_Công cụ AI đã gọi trong lượt này: Bash ×42, Write ×12, Read ×5, PowerShell ×4, Edit ×3._
+_Công cụ AI đã gọi trong lượt này: Bash ×53, Write ×15, Read ×9, Edit ×5, PowerShell ×4._
 
 ### AI output
 
@@ -1448,3 +1448,23 @@ Prompt log đã sạch: 26 lượt, tất cả là prompt thật của bạn. Gi
 Skills đã commit. Giờ đọc mẫu AI-02 (Audit Report) và AI-05 (Privacy Checklist) để làm đúng cấu trúc:
 
 Viết AI Audit Report theo mẫu AI-02. Bảng tương tác được sinh tự động: prompt lấy nguyên văn từ JSONL, phần tóm tắt output tôi tự viết cho từng lượt.
+
+Audit Report đã sinh đủ 26 lượt. Giờ viết AI Critique, 200–300 từ:
+
+321 tiếng, vượt giới hạn 300. Rút gọn lại:
+
+Critique còn 268 tiếng, nằm trong giới hạn. Giờ thêm Task 2, Task 3 và phần tổng kết vào báo cáo chính:
+
+Không có liên kết hỏng. Sửa thêm tiêu đề mục 1.3 cho khớp với nội dung đã khai báo trung thực, và bổ sung Task 3 vào dòng Phạm vi:
+
+Giờ cập nhật README: email, nền tảng Task 3, Test Summary và bảng tự chấm điểm theo đúng thực tế.
+
+Commit các tài liệu báo cáo:
+
+Tạo link form điền sẵn cho issue Task 3 duy nhất, để bạn tạo trên GitHub:
+
+Giờ xuất PDF: chuyển Markdown sang HTML bằng Python, rồi in ra PDF bằng Chrome.
+
+Kiểm tra trang PDF có hiển thị đúng tiếng Việt và bảng không:
+
+PDF hiển thị đúng tiếng Việt và bảng. Giờ xuất lại prompt log lần cuối, dựng lại PDF, xuất git log rồi push:
