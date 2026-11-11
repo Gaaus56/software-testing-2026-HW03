@@ -1,7 +1,7 @@
 # Task 1: Bug report
 
 - Nguồn: 48 mục Failed ở [báo cáo chính, mục 1.6](../23120017_HW03_Report.md), gom thành **36 bug** (các mục cùng nguyên nhân, cùng màn hình gộp chung 1 bug)
-- Nơi báo: GitHub Issues của repo nhóm `angquoc/software-testing-2026-HW03-group`, dùng template "Bug report", kèm ảnh trong thư mục [screenshots/](screenshots/). Đã tạo **35 issue** (#68 → #102), tự gán cho 23120017. BUG-06: Trùng issue #66 của 23120061 (FL-05, cùng màn A-03): không tạo issue mới, đã comment bổ sung CL-28, trường hợp tên chỉ có khoảng trắng và ảnh (README nhóm mục 4.1)
+- Nơi báo: GitHub Issues của repo nhóm `angquoc/software-testing-2026-HW03-group`, dùng template "Bug report", kèm ảnh trong thư mục [screenshots/](screenshots/). Đã tạo **35 issue** (#68 → #102), tự gán cho 23120017. BUG-06: Trùng issue #66 của 23120061 (FL-05, cùng màn A-03): không tạo issue mới, đã comment bổ sung CL-28, trường hợp tên chỉ có khoảng trắng và ảnh (README nhóm mục 4.1). Ảnh danh sách issue đã tạo: [issues-list-1.png](screenshots/issues-list-1.png), [issues-list-2.png](screenshots/issues-list-2.png)
 - Môi trường chung: Google Chrome 157.0.8103.39, Windows 11, ngôn ngữ vi-VN, cửa sổ 1366×768; EShop commit `85af3ba`
 - Severity theo thang của nhóm (README repo nhóm mục 4.3), tính bằng mức nghiêm trọng cao nhất trong các mục checklist của bug (bảng quy đổi ở sheet Thông tin của file Excel). Label chung cho mọi issue: `bug`, `platform: admin`, `task: T1 checklist`
 
